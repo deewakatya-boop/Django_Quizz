@@ -1,0 +1,32 @@
+{% extends 'quiz/base.html' %}
+
+{% block title %}Вопрос {{ total|add:1 }} из {{ max_questions }}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white text-center">
+                <h4>Вопрос {{ total|add:1 }} из {{ max_questions }}</h4>
+            </div>
+            <div class="card-body text-center">
+                <h3>Столица {{ question.country_genitive }}?</h3>
+                
+                <form method="post" action="{% url 'quiz:quiz' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        {{ form.answer }}
+                        {% if form.answer.errors %}
+                            <div class="alert alert-danger mt-2">{{ form.answer.errors }}</div>
+                        {% endif %}
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg w-100">Ответить</button>
+                </form>
+                
+                <hr>
+                <p>Правильных ответов: <strong>{{ score }}</strong> из <strong>{{ total }}</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

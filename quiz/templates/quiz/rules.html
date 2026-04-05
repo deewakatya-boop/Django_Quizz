@@ -1,0 +1,27 @@
+{% extends 'quiz/base.html' %}
+
+{% block title %}Правила игры{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow">
+            <div class="card-header bg-info text-white text-center">
+                <h4>📜 Правила квиза</h4>
+            </div>
+            <div class="card-body">
+                <p>Вам будет показано <strong>{{ limit }}</strong> случайных вопросов.</p>
+                <ul>
+                    <li>Введите столицу указанной страны.</li>
+                    <li>Регистр букв не имеет значения.</li>
+                    <li>После каждого ответа вы увидите результат.</li>
+                    <li>В конце квиза узнаете свой счёт.</li>
+                </ul>
+                <div class="text-center">
+                    <a href="{% url 'quiz:quiz' %}" class="btn btn-success btn-lg">🚀 Начать квиз</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

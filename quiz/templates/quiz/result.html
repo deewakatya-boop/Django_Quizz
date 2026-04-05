@@ -1,0 +1,29 @@
+{% extends 'quiz/base.html' %}
+
+{% block title %}Результаты квиза{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow text-center">
+            <div class="card-header bg-success text-white">
+                <h4>🎉 Ваш результат 🎉</h4>
+            </div>
+            <div class="card-body">
+                <h2>Вы ответили правильно на</h2>
+                <div class="display-1 my-4" style="font-weight: bold; color: #28a745;">
+                    {{ score }} из {{ total }}
+                </div>
+                <p>Процент правильных ответов: 
+                    <strong>{% widthratio score total 100 %}%</strong>
+                </p>
+                <hr>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{% url 'quiz:quiz' %}" class="btn btn-primary btn-lg">🔄 Заново</a>
+                    <a href="{% url 'quiz:index' %}" class="btn btn-secondary btn-lg">🏠 На главную</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
