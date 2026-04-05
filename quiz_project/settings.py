@@ -1,4 +1,3 @@
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -52,7 +51,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'quiz_project.wsgi.application'
 
-# Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -60,7 +58,6 @@ DATABASES = {
     }
 }
 
-# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
