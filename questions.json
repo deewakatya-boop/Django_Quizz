@@ -1,0 +1,67 @@
+[
+  {
+    "country": "Россия",
+    "country_genitive": "России",
+    "capital": "Москва"
+  },
+  {
+    "country": "Франция",
+    "country_genitive": "Франции",
+    "capital": "Париж"
+  },
+  {
+    "country": "Германия",
+    "country_genitive": "Германии",
+    "capital": "Берлин"
+  },
+  {
+    "country": "Италия",
+    "country_genitive": "Италии",
+    "capital": "Рим"
+  },
+  {
+    "country": "Испания",
+    "country_genitive": "Испании",
+    "capital": "Мадрид"
+  },
+  {
+    "country": "Великобритания",
+    "country_genitive": "Великобритании",
+    "capital": "Лондон"
+  },
+  {
+    "country": "США",
+    "country_genitive": "США",
+    "capital": "Вашингтон"
+  },
+  {
+    "country": "Китай",
+    "country_genitive": "Китая",
+    "capital": "Пекин"
+  },
+  {
+    "country": "Япония",
+    "country_genitive": "Японии",
+    "capital": "Токио"
+  },
+  {
+    "country": "Бразилия",
+    "country_genitive": "Бразилии",
+    "capital": "Бразилиа"
+  },
+  {
+    "country": "Малидивы",
+    "country_genitive": "Мальдив",
+    "capital": "Мале"
+  },
+  {
+    "country": "Канада",
+    "country_genitive": "Канады",
+    "capital": "Оттава"
+  },
+  {
+    "country": "Австралия",
+    "country_genitive": "Австралии",
+    "capital": "Канберра"
+  }
+]
